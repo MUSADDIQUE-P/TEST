@@ -125,10 +125,10 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-    font-family: 'Nunito', sans-serif;
+    font-family: sans-serif;
     position: relative;
-    margin-left: 25px;
-    padding: 35px 0;
+    margin-left: 55px;
+    padding: 55px 0;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
@@ -192,9 +192,9 @@ h6,
         position: absolute;
         content: "";
         width: 0;
-        height: 2px;
+        height: 3px;
         bottom: -1px;
-        left: 50%;
+        
         background: var(--primary);
         transition: .5s;
     }
