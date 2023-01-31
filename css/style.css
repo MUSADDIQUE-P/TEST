@@ -596,3 +596,7 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-item h6 {
     color: var(--dark) !important;
 }
+.sericon {
+    width: 115px;
+    padding-bottom: 10px;
+  }
