@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOFTMORE_IT</title>
+  <!-- footer  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- end  -->
+
+
+  <style>
+    html,
+    body,
+    img,
+    figure {
+      max-width: 100%;
+    }
+
+    .bgimg {
+      background-image: url("https://img.freepik.com/free-vector/neon-light-background_53876-67235.jpg?size=626&ext=jpg&ga=GA1.2.486821803.1671507658&semt=ais");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      position: relative;
+      height: 100%;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    #logoimg {
+      margin-left: 30%;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a {
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .ct-u-paddingTop10 {
+      padding-top: 10px !important;
+    }
+
+    .ct-footer {
+      /* background-color: #111; */
+      /* padding-top: 70px; */
+      /* margin-top: 20px; */
+      position: relative;
+      background-color: #000;
+    }
+
+    .ct-footer-pre {
+      width: 100%;
+      /* padding-bottom: 55px; */
+      border-bottom: 1px solid #555;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ct-footer-pre span {
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #ebebeb;
+      font-size: 30px;
+    }
+
+    .ct-footer-pre .form-group {
+      position: relative;
+      margin: 0;
+    }
+
+    .ct-footer-pre .form-group:before,
+    .ct-footer-pre .form-group:after {
+      content: "";
+      display: table;
+    }
+
+    .ct-footer-pre .form-group:after {
+      clear: both;
+    }
+
+    .ct-footer-pre .form-group input {
+      border: 1px solid #00bff3;
+      background-color: #333;
+      color: #fff;
+      height: 50px;
+      padding: 0 30px;
+      margin: 0 5px;
+      border-radius: 0 !important;
+    }
+
+    .ct-footer-pre .form-group button {
+      /* height: 50px; */
+      position: relative;
+      width: 80px;
+      padding: 0;
+    }
+
+    .ct-footer-list {
+      padding: 20px 0 0 0;
+      list-style: none;
+      padding-left: 0;
+      display: table;
+      width: 100%;
+      border-bottom: 1px solid #555;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ct-footer-list>li .ct-footer-list-header {
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #00bff3;
+      font-size: 30px;
+    }
+
+    .ct-footer-list>li ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .ct-footer-list>li ul li a {
+      color: #fff;
+    }
+
+    .ct-footer-list>li ul li a:hover,
+    .ct-footer-post a:hover {
+      text-decoration: underline;
+    }
+
+    .ct-footer-post {
+      background: #000;
+      padding: 30px 0;
+    }
+
+    .ct-footer-post .inner-left,
+    .ct-footer-post .inner-right {
+      padding: 20px 0;
+    }
+
+    .ct-footer-post ul {
+      /* list-style: none; */
+      padding-left: 0;
+      margin: 0 -20px;
+    }
+
+    .ct-footer-post ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .ct-footer-post a {
+      color: #fff;
+    }
+
+    .ct-footer-post p {
+      color: #fff;
+    }
+
+    .ct-footer-meta {
+      padding-top: 30px;
+    }
+
+    .ct-footer-meta .ct-socials {
+      padding: 20px 0;
+    }
+
+    .ct-footer-meta .ct-socials li {
+      padding: 0 3px;
+    }
+
+    .ct-footer--with-button {
+      padding-top: 150px;
+    }
+
+    /* Media Queries */
+
+    @media (min-width: 1200px) {
+      .ct-footer-pre {
+        display: table;
+      }
+
+      .ct-footer-pre>.inner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .ct-footer-list>li {
+        width: 20%;
+        display: table-cell;
+        vertical-align: top;
+      }
+
+      .ct-footer-list>li:last-child {
+        width: 7%;
+      }
+    }
+
+    @media (max-width: 1199px) {
+
+      .ct-footer-pre .form-group {
+        padding-top: 15px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .ct-footer-list>li {
+        display: inline-block;
+        float: left;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .ct-footer-post .inner-left {
+        float: left;
+      }
+
+      .ct-footer-post .inner-right {
+        float: right;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .ct-footer-post {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .ct-footer-list>li {
+        width: 33.3333%;
+      }
+
+    }
+
+    @media (min-width: 768px) {
+      .ct-footer-post p {
+        display: inline-block;
+      }
+
+      .ct-footer-post p+p {
+        padding-left: 50px;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+      address {
+        /* padding-top: 30px; */
+      }
+
+
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      .ct-footer-list>li {
+        width: 50%;
+      }
+
+
+    }
+
+    @media (min-width: 480px) {
+      .ct-footer-pre .form-group button {
+        top: -1px;
+      }
+
+      .ct-footer-pre .form-group input {
+        width: 331px;
+      }
+
+
+    }
+
+    @media (max-width: 479px) {
+      .ct-footer-pre .form-group input {
+        float: left;
+        width: 70%;
+        margin: 0;
+      }
+
+      .ct-footer-pre .form-group button {
+        float: left;
+        width: 30%;
+      }
+
+      .ct-footer-list>li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .ct-footer-list {
+        /* padding: 20px 0; */
+      }
+
+      .btn.btn-large {
+        /* padding: 20px 10px; */
+        line-height: 0.9;
+        font-size: 26px;
+        letter-spacing: -0.2px;
+      }
+
+      .ct-section_header--type1 {
+        font-size: 60px;
+        line-height: 0.8;
+      }
+
+      .ct-section_header+p {
+        font-size: 22px;
+      }
+
+      .ct-section_header--type3 small {
+        font-size: 25px;
+      }
+
+      .ct-section_header--type4 small {
+        font-size: 40px;
+      }
+
+      .ct-section_header--type3 span {
+        font-size: 90px;
+      }
+
+      .ct-section_header--type4 span {
+        font-size: 80px;
+      }
+
+      .ct-section_header--type4+p {
+        font-size: 28px;
+      }
+
+      .ct-footer-list-header {
+        padding-top: 30px;
+      }
+
+      #logoimg {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- new footer  -->
+  <footer class="ct-footer bgimg">
+
+
+    <div class="container">
+      <div>
+
+        <ul class="ct-footer-list text-center-sm">
+
+          <li>
+
+            <img src="./img/logo.png" alt="" height="100px" id="logoimg">
+            <br> <br>
+            <div>
+              <!-- Content -->
+
+              <center>
+                <h2 style="color: white; font-weight: 600; width: fit-content; ">
+                  With Softmore, <br> You Grow More
+                </h2>
+
+              </center>
+            </div>
+          </li>
+
+          <li>
+            <h2 class="ct-footer-list-header service-list">Company </h2>
+            <ul style="font-size: medium; color: gray; ">
+              <li>
+                <a href="service.html">Our Services</a>
+              </li>
+              <li>
+                <a href="about.html">About Us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header service-list">Get Help </h2>
+            <ul style="font-size: medium; color: gray; ">
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li style="color: white; font-size:medium; list-style: none;">
+                <h2 class="ct-footer-list-header">Address</h2>
+                <p>
+                  <span>69,Work DSID Centre<br>Madipur West Delhi, <br> India 110063 </span>
+
+                  <br>
+                  <span><span style="color:chocolate;">Phone: </span> <a href="tel:+91 9911773747"
+                      style="color: blueviolet;"> +91 9911773747
+                    </a></span>
+                  <br>
+                  <span style="color: chocolate; ">Email:<span><a href="mailto:support@softmoreit.com"
+                        style="color: blueviolet;">support@softmoreit.com
+                      </a></span> </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br>
+      </div>
+      <div>
+      </div>
+    </div>
+    <li>
+      <div class="" style="margin-top: -50px;">
+        <center>
+          <h3 style="color: white;">Follow Us </h3>
+
+          <div class="social-links">
+            <ul class="ct-socials list-unstyled list-inline d-flex ">
+              <li class="p-2">
+                <a href="https://wa.me/+919911773747" target="_blank"><img alt="whatsapp"
+                    style="height: 40px; width: 40px; border-radius: 100%;" src="./img/tech/whatsapp.png"></a>
+              </li>
+              <li class="p-2">
+                <a href="https://www.facebook.com/SoftemoreIT/" target="_blank"><img alt="facebook"
+                    style="height: 40px; width: 40px; border-radius: 100%;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMc6kAscdg7PwMXjloWbmFh8J6jyneIJFztA&usqp=CAU"></a>
+              </li>
+              <li class="p-2">
+
+                <a href="https://www.linkedin.com/company/softmore-it/" target="_blank"><img alt="linkdin"
+                    style="height: 40px; width: 40px; border-radius: 100%;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIbiofxGclX20CWBDtpmjOcbbuqEJS6PrSQ&usqp=CAU"></a>
+              </li>
+              <li class="p-2">
+
+                <a href="https://www.instagram.com/softmore_it/" target="_blank"><img alt="instagram"
+                    style="height: 40px; width: 40px; border-radius: 100%;"
+                    src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png"></a>
+              </li>
+              <li class="p-2">
+
+                <a href="https://in.pinterest.com/eklavya0190/" target="_blank"><img alt="pintrest"
+                    style="height: 40px; width: 40px; border-radius: 100%;"
+                    src="https://cdn-icons-png.flaticon.com/128/1377/1377257.png"></a>
+              </li>
+            </ul>
+        </center>
+
+      </div>
+
+      </div>
+    </li>
+    <div class="ct-footer-post">
+
+      <div class="container">
+        <div class="inner-left">
+          <ul>
+            <li>
+              <a href="./condition.HTML" style="color: blueviolet;">Terms and
+                Services</a>
+            </li>
+          </ul>
+        </div>
+        <br>
+        <center>
+          <div>
+            <p>Copyright © 2023 softmoreit solutions Pvt. Ltd&nbsp;</p>
+          </div>
+        </center>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer  -->
+  
+</body>
+
+</html>
