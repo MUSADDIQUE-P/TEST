@@ -84,7 +84,7 @@
     --_p: 100%;
     --_s: .2s;
     border: 2px solid rgba(0, 0, 0, 0.582);
-    border-radius: 30px;
+    border-radius: 10px;
   }
   
   .card-title {
