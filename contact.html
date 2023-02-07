@@ -290,8 +290,7 @@
 
         }
     </style>
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/6e5bc804a236ef2508cea1e01/c80ee8b89309884ba31d271a3.js");</script>
+   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6e5bc804a236ef2508cea1e01/29bc4e77647f66675f2ddfa3e.js");</script>
 </head>
 
 <body>
@@ -514,7 +513,7 @@
                 <section>
                     <h2 style="padding: 5px;">Get In Touch With US</h2>
                     <br>
-                    <form action="https://formsubmit.co/pinjarimusaddique@yahoo.com" method="post">
+                    <form action="https://formsubmit.co/22a848b8e1758197d329937bee795006" method="POST">
 
 
 
@@ -578,7 +577,7 @@
                                 <label class="form-input" for="name">Project budget</label>
 
                                 <span>
-                                    <input id="email" type="range" value="0" name="email"
+                                    <input  type="range" value="0" 
                                         onchange="updateTextInput(this.value)" max="100000">
                                     ₹<input for="budget" id="budget" value="0" name="budget">
                                 </span>
@@ -622,21 +621,20 @@
                         </div> -->
                             <!-- <h6 id="status" style="color: #ee7e6a;"></h6> -->
                             <!-- <br style="clear:both;" /> -->
-
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://testso.softmoreit.com/contact">
                             <div style="float:left; ">
 
-                                <button type="button" name="submit" id="contact-submit" data-submit="...Sending"
-                                    onclick="sendEmail()">
+                                <button type="submit" onclick="Thank()">
                                     Send Message <i class="fa fa-arrow-right" aria-hidden="true"
                                         style="background-color:rgb(117, 117, 230); padding: 10px; border-radius: 30px;"></i>
                                 </button>
                             </div>
                         </section>
 
-                        <input type="hidden" name="_cc" value="itheadmaster@gmail.co">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="ThankS For Contacting Softmore IT We Will Contact You Soon!">
-
+                      
+                        
+                        
                     </form>
                 </section>
             </div>
@@ -739,6 +737,11 @@
             document.getElementById('budget').value = val;
         }
     </script>
+    <script>
+        function Thank() {
+          alert("Thanks! For Contacting Us!");
+        }
+        </script>
 
     <!-- <script src="https://smtpjs.com/v3/smtp.js">
     </script>
