@@ -110,9 +110,58 @@
             }
         }
     </style>
+
+    <!-- popup form  -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- for telephone input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+    <style>
+        .popup-logo {
+            margin-top: 10%;
+            height: 100%;
+            width: 70%;
+        }
+
+        #recipient-phone {
+            width: 470px;
+        }
+
+        @media screen and (max-width: 600px) {
+            #recipient-phone {
+                width: 100%;
+            }
+
+            .popup-logo {
+                padding: 10px;
+                margin-top: 30%;
+                height: auto;
+                width: 80%;
+            }
+        }
+
+        .form-control {
+            border-radius: 7px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+
+    <!-- end -->
 </head>
 
 <body>
+
     <div class=" d-flex align-items-center justify-content-center rounded" style="position: fixed; display: none; left: 45px; bottom: 45px;
         z-index: 101; width:40px;">
         <a href="https://wa.me/+919911773747"><img style="width: 40px;" src="./img/tech/whatsapp.png" alt=""></a>
@@ -169,8 +218,7 @@
                 </button>
                 <div class="collapse navbar-collapse text-white" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 text-white">
-                        <a href="#" class="nav-item nav-link active text-white"
-                            style="font-size: 22px;">Home</a>
+                        <a href="#" class="nav-item nav-link active text-white" style="font-size: 22px;">Home</a>
 
                         <a href="about" class="nav-item nav-link text-white" style="font-size: 22px;">About</a>
 
@@ -239,8 +287,8 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Our SEO expert offers SEO
                                 management services that assist you in achieving high rankings and accelerating the
                                 growth of your business. </h5>
-                            <a href="contact"
-                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Get Started</a>
+                            <a href="contact" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Get
+                                Started</a>
                         </div>
                     </div>
                 </div>
@@ -355,7 +403,7 @@
 
     <!-- Facts Start -->
 
-    <iframe style="width: 95%; height:470px; border:solid black 0px; margin:-100px 0px -100px 3%;" src="card"
+    <iframe style="width: 95%; height:470px; border:solid black 0px; margin:-100px 0px -100px 3%;" src="./card.html"
         data-wow-delay="1s"></iframe>
 
     <!-- Facts End -->
@@ -379,9 +427,11 @@
             <br>
 
         </div>
-        <div style="margin:0px 0px -50px 65px;">
+        <div style="margin:0px 0px -50px -10px;   display: flex;
+        justify-content: center;
+        align-items: center;">
             <!-- <iframe style="width: 97%; margin:10px 0px -120px 3%; height: 580px;" src="Stategies"></iframe> -->
-            <include src="./Stategies"></include>
+            <include src="./Stategies.html"></include>
         </div>
 
     </div>
@@ -685,7 +735,7 @@
     </div> -->
 
     <!-- End Example Code -->
-    <include src="./faq"></include>
+    <include src="./faq.html"></include>
     <!-- About Start -->
     <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -756,46 +806,46 @@
         <strong>
             <div class="d-flex align-content-center justify-content-center" style="font-size: 20px;">
                 <ol>
-                    <div class="text-right text-sm-left mb-2-9">
+                    <div class=" text-sm-left mb-2-9">
                         <li>
                             <p class="display-30 mb-3">Accelerated client interaction, leads, sales and branding.
                             </p>
                         </li>
                     </div>
                     <li>
-                        <div class="text-right text-sm-left mb-2-9">
+                        <div class=" text-sm-left mb-2-9">
                             <p class=" mb-3">Connect To Your Targeted Audience.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left mb-2-9">
+                        <div class=" text-sm-left mb-2-9">
                             <p class="display-30 mb-3">Offer the best possible results for all types of B2B and B2C
                                 industries. </p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left">
+                        <div class=" text-sm-left">
                             <p class="display-30 mb-3">Promote Your Products & Services Directly.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left mb-2-9 ">
+                        <div class=" text-sm-left mb-2-9 ">
                             <p class="display-30 mb-3 ">A strong team to build reputation on social media sites.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left">
+                        <div class=" text-sm-left">
                             <p class="display-30 mb-3 ">Create Brand Awareness And Improve Website's Visibility.
                             </p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left mb-2-9">
+                        <div class=" text-sm-left mb-2-9">
                             <p class="display-30 mb-3 ">Zero communication gaps.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="text-right text-sm-left">
+                        <div class=" text-sm-left">
                             <p class="display-30 mb-3">Generate Leads And Enhance Your Business.</p>
                         </div>
                     </li>
@@ -805,12 +855,107 @@
     </div>
 
     <!-- end  -->
+    <!-- popup form  -->
+    <div class="container ">
+
+        <!-- Button to Open the Modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button> -->
+
+        <!-- The Modal -->
+        <div class="modal fade " id="myModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+                <div class="modal-content" style="background-color: #141F31; border-radius: 20px;">
+
+                    <!-- Modal Header -->
+                    <center>
+                        <div class="modal-header justify-content-center align-items-center">
+                            <h5 class='col-12 modal-title text-center text-white'><b>Let Us Know Your Requirements</b>
+                            </h5>
+                            <!-- <h6 class="modal-title text-white">Let Us Know Youe Requirements</h6> -->
+                            <button type="button" id="close" class="close text-white pr-5"
+                                data-dismiss="modal">&times;</button>
+                        </div>
+                    </center>
+
+                    <!-- Modal body -->
 
 
+                    <div class="modal-body  ">
+
+                        <div class="d-flex flex-row">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-center align-items-lg-center">
+                                    <center><img src="https://softmoreit.com/img/logo.png" class="popup-logo"
+                                            alt="logo">
+                                    </center>
+                                </div>
+                            </div>
+                            <form id="myForm" name="myForm" method="post">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="recipient-email" name="recipient-email"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="recipient-phone" name="recipient-phone"
+                                        placeholder="Your Phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="recipient-name" name="recipient-name"
+                                        placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="company-name" name="company-name"
+                                        placeholder="Company Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="pincode" name="pincode"
+                                        placeholder="Pincode">
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label  text-white" for="flexCheckDefault">
+                                    I agree to the terms and conditions
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label  text-white" for="flexCheckDefault">
+                                    <i class="fa fa-whatsapp" style="font-size:15px;color:green"></i>
+                                    Would you like to get updates on Whatsapp
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer d-flex justify-content-center">
+                        <input type="submit" value="Submit" class="btn btn-secondary" onclick="validateForm()" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end  -->
 
     <div class="seperator"></div>
     <!-- Footer Start -->
-    <include src="./footer"></include>
+    <include src="./footer.html"></include>
     <!-- Footer End -->
 
 
@@ -819,7 +964,42 @@
     <br>
 
 
+    <!-- <popup form  -->
 
+    <script>
+        var close = document.getElementById("close");
+        close.addEventListener("click", function () {
+            $("#myModal").modal('hide');
+        });
+        setTimeout(function () { $("#myModal").modal('show'); }, 25000);
+        var popupInterval = setInterval(function () { $("#myModal").modal('show'); }, 300000);
+
+        function validateForm() {
+            let x = document.forms["myForm"]["recipient-email"].value;
+            let y = document.forms["myForm"]["recipient-name"].value;
+            let z = document.forms["myForm"]["recipient-phone"].value;
+            let a = document.forms["myForm"]["company-name"].value;
+            let b = document.forms["myForm"]["pincode"].value;
+
+            if (x == "" || y == "" || z == "" || a == "" || b == "") {
+                alert("Please fill all the fields");
+                return false;
+            }
+            else {
+                $("#myModal").modal('hide');
+                clearInterval(popupInterval);
+                return true;
+            }
+        }
+
+        const phoneInputField = document.querySelector("#recipient-phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+    </script>
+    <!-- end  -->
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

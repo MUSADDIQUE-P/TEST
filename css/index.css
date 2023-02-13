@@ -83,7 +83,7 @@
     box-shadow: rgba(0, 80, 252, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     --_p: 100%;
     --_s: .2s;
-    border: 1px solid rgba(0, 0, 0, 0.582);
+    border: 2.5px solid gray;
     border-radius: 7px;
   }
   
