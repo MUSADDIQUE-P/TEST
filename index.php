@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -111,15 +112,6 @@
         }
     </style>
 
-    <!-- popup form  -->
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
     <!-- for telephone input -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
@@ -209,8 +201,8 @@
     <div class="container-fluid position-relative p-0">
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 text-white"
-                style="background-color: black; ">
-                <a href="./" class="navbar-brand p-0">
+                style="background-color: #242124; ">
+                <a href="./index.php" class="navbar-brand p-0">
                     <img src="./img/logo.png" alt="logo" style="height: 80px;padding: 5px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -223,7 +215,8 @@
                         <a href="about" class="nav-item nav-link text-white" style="font-size: 22px;">About</a>
 
                         <div class="nav-item dropdown">
-                            <a class="nav-link active text-white" style="font-size: 22px;"  href="service">Services<i class="fas fa-angle-down ms-2"></i></a>
+                            <a href="service" class="nav-link dropdown-toggle text-white " style="font-size: 22px;"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
                                 <a href="service" class="dropdown-item">ALL SERVICES</a>
                                 <a href="web_application" class="dropdown-item">WEB APPLICATION</a>
@@ -248,7 +241,7 @@
                             <a href="quote" class="dropdown-item">Free Quote</a>
                         </div>
                     </div> -->
-                        <a href="contact" class="nav-item nav-link text-white" style="font-size: 22px;">Contact</a>
+                        <a href="contact.php" class="nav-item nav-link text-white" style="font-size: 22px;">Contact</a>
                     </div>
                     <button type="button" class="btn text-red ms-3 text-white"
                         style="font-size: 22px; border-radius:50px; background-color:blue"><a href="contact">Get a
@@ -855,101 +848,7 @@
 
     <!-- end  -->
     <!-- popup form  -->
-    <div class="container ">
-
-        <!-- Button to Open the Modal -->
-        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Open modal
-    </button> -->
-
-        <!-- The Modal -->
-        <div class="modal fade " id="myModal">
-            <div class="modal-dialog modal-lg modal-dialog-centered ">
-                <div class="modal-content" style="background-color: #141F31; border-radius: 20px;">
-
-                    <!-- Modal Header -->
-                    <center>
-                        <div class="modal-header justify-content-center align-items-center">
-                            <h5 class='col-12 modal-title text-center text-white'><b>Let Us Know Your Requirements</b>
-                            </h5>
-                            <!-- <h6 class="modal-title text-white">Let Us Know Youe Requirements</h6> -->
-                            <button type="button" id="close" class="close text-white pr-5"
-                                data-dismiss="modal">&times;</button>
-                        </div>
-                    </center>
-
-                    <!-- Modal body -->
-
-
-                    <div class="modal-body  ">
-
-                        <div class="d-flex flex-row">
-                            <div class="w-100">
-                                <div class="d-flex justify-content-center align-items-lg-center">
-                                    <center><img src="https://softmoreit.com/img/logo.png" class="popup-logo"
-                                            alt="logo">
-                                    </center>
-                                </div>
-                            </div>
-                            <form id="myForm" name="myForm" method="post">
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="recipient-email" name="recipient-email"
-                                        placeholder="Your Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" id="recipient-phone" name="recipient-phone"
-                                        placeholder="Your Phone" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="recipient-name" name="recipient-name"
-                                        placeholder="Your Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="company-name" name="company-name"
-                                        placeholder="Company Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="pincode" name="pincode"
-                                        placeholder="Pincode">
-                                </div>
-
-                            </form>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label  text-white" for="flexCheckDefault">
-                                    I agree to the terms and conditions
-                                </label>
-                            </div>
-
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label  text-white" for="flexCheckDefault">
-                                    <i class="fa fa-whatsapp" style="font-size:15px;color:green"></i>
-                                    Would you like to get updates on Whatsapp
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer d-flex justify-content-center">
-                        <input type="submit" value="Submit" class="btn btn-secondary" onclick="validateForm()" />
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <?php require 'popup.php'?>
     <!-- end  -->
 
     <div class="seperator"></div>
@@ -965,39 +864,7 @@
 
     <!-- <popup form  -->
 
-    <script>
-        var close = document.getElementById("close");
-        close.addEventListener("click", function () {
-            $("#myModal").modal('hide');
-        });
-        setTimeout(function () { $("#myModal").modal('show'); }, 25000);
-        var popupInterval = setInterval(function () { $("#myModal").modal('show'); }, 300000);
-
-        function validateForm() {
-            let x = document.forms["myForm"]["recipient-email"].value;
-            let y = document.forms["myForm"]["recipient-name"].value;
-            let z = document.forms["myForm"]["recipient-phone"].value;
-            let a = document.forms["myForm"]["company-name"].value;
-            let b = document.forms["myForm"]["pincode"].value;
-
-            if (x == "" || y == "" || z == "" || a == "" || b == "") {
-                alert("Please fill all the fields");
-                return false;
-            }
-            else {
-                $("#myModal").modal('hide');
-                clearInterval(popupInterval);
-                return true;
-            }
-        }
-
-        const phoneInputField = document.querySelector("#recipient-phone");
-        const phoneInput = window.intlTelInput(phoneInputField, {
-            utilsScript:
-                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        });
-
-    </script>
+    
     <!-- end  -->
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

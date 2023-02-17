@@ -1,3 +1,13 @@
+<?php
+if(isset($GLOBALS['detailsNotSent'])) {
+    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Error!</strong> Details are not sent. Plsese check the details again.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+  unset($GLOBALS['detailsNotSent']);
+} 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -341,8 +351,8 @@
     <div class="container-fluid position-relative p-0">
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 text-white"
-                style="background-color: black; ">
-                <a href="./" class="navbar-brand p-0">
+                style="background-color: #242124; ">
+                <a href="./index.php" class="navbar-brand p-0">
                     <img src="./img/logo.png" alt="logo" style="height: 80px;padding: 5px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -350,12 +360,13 @@
                 </button>
                 <div class="collapse navbar-collapse text-white" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 text-white">
-                        <a href="./" class="nav-item nav-link text-white" style="font-size: 22px;">Home</a>
+                        <a href="./index.php" class="nav-item nav-link text-white" style="font-size: 22px;">Home</a>
 
                         <a href="about" class="nav-item nav-link text-white" style="font-size: 22px;">About</a>
 
                         <div class="nav-item dropdown">
-                            <a class="nav-link  text-white" style="font-size: 22px;"  href="service">Services<i class="fas fa-angle-down ms-2"></i></a>
+                            <a href="service" class="nav-link dropdown-toggle text-white " style="font-size: 22px;"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
                                 <a href="service" class="dropdown-item">ALL SERVICES</a>
                                 <a href="web_application" class="dropdown-item">WEB APPLICATION</a>
@@ -380,7 +391,7 @@
                             <a href="quote" class="dropdown-item">Free Quote</a>
                         </div>
                     </div> -->
-                        <a href="contact" class="nav-item nav-link active text-white"
+                        <a href="contact.php" class="nav-item nav-link active text-white"
                             style="font-size: 22px;">Contact</a>
                     </div>
                     <button type="button" class="btn text-red ms-3 text-white"
@@ -512,10 +523,8 @@
                 <section>
                     <h2 style="padding: 5px;">Get In Touch With US</h2>
                     <br>
-                    <form action="https://formsubmit.co/53cd715fab47063b2a5b15ac2ea4d415" method="POST">
-
-
-
+                    <!-- <form action="https://formsubmit.co/53cd715fab47063b2a5b15ac2ea4d415" method="POST"> -->
+                    <form action="partials/_contact.php" method="POST">
                         <section>
 
                             <div style="float:left;margin-right:30px;">

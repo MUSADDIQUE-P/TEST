@@ -50,9 +50,84 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .box1:hover {
+            background: linear-gradient(140deg, rgba(4, 0, 75, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 181, 255, 1) 100%);
+            background-size: 400% 400%;
+            animation: gradient-bg 5s ease infinite;
+
+        }
+
+        .box2 {
+            background: linear-gradient(140deg, rgba(4, 0, 75, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 181, 255, 1) 100%);
+            background-size: 400% 400%;
+            animation: gradient-bg 5s ease infinite;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 230px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: transparent;
+            color: black;
+
+
+        }
+
+        .flip-card-back {
+            background-color: transparent;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .form-input {
+            padding: 5px;
+            border-radius: 10px;
+            width: 300px;
+
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: #0d0925;">
     <div class=" d-flex align-items-center justify-content-center rounded" style="position: fixed; display: none; left: 45px; bottom: 45px;
     z-index: 101; width:40px;">
         <a href="https://wa.me/+919911773747"><img style="width: 40px;" src="./img/tech/whatsapp.png" alt=""></a>
@@ -117,7 +192,8 @@
                             <a href="about" class="nav-item nav-link text-white" style="font-size: 22px;">About</a>
 
                             <div class="nav-item dropdown">
-                                <a class="nav-link active text-white" style="font-size: 22px;"  href="service">Services<i class="fas fa-angle-down ms-2"></i></a>
+                                <a class="nav-link active text-white" style="font-size: 22px;" href="service">Services<i
+                                        class="fas fa-angle-down ms-2"></i></a>
                                 <div class="dropdown-menu">
                                     <a href="service" class="dropdown-item">ALL SERVICES</a>
                                     <a href="web_application" class="dropdown-item">WEB APPLICATION</a>
@@ -163,8 +239,350 @@
             </div>
         </div>
         <!-- Navbar End -->
+        <!-- what is seo start -->
+<section>
+    <div style=" width: 100%; background-color: #0d0925;">
+        <div style=" height: fit-content; background-color: #0d0925;" class="container-xl">
+            <br><br><br><br>
+            <div class="container-fluid py-5 ">
+                <div style="padding: 0px 3% 0px 3%; border-radius: 15px;" class="row box2">
+                    <div class="row g-0">
 
-        <div class="container-fluid bg-primary py-5 ">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <br><br><br>
+                                <h5 style="font-size: 40px;" class="text-primary">Professional SEO Services Company
+                                </h5>
+                                <br>
+                                <h4 style="font-size: 30px;" class="text-primary">Rank Better. Increase Traffic.
+                                    Achieve Better ROIs</h4>
+                                <br>
+                                <h5 style="font-size: 20px;" class="text-white">We are a leading SEO Company that
+                                    believes in human-first SEO strategies. Our SEO experts are known for curating
+                                    legit and professional SEO services aligned with your brand. Our innovation-led
+                                    approach has helped hundreds of our clients acquire a solid foothold and
+                                    visibility of their business among Search Engines.</h5>
+                                <br>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div style="margin: 30px 0px 30px 0px; border-radius: 15px; padding: 25px; background-color: whitesmoke; border: 1px solid grey;"
+                                class="card">
+                                <h3>Want to kickstart your first SEO Campaign?</h3>
+                                <div class="body">
+                                    <form action="https://formsubmit.co/53cd715fab47063b2a5b15ac2ea4d415"
+                                        method="POST">
+
+                                        <div style="margin-bottom: 15px;">
+                                            <input class="form-input" id="name" type="text" name="name"
+                                                placeholder="Your Full Name" required>
+                                            <br>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <input class="form-input" id="email" type="email" name="email"
+                                                placeholder="Your Email" required>
+                                            <br>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <input class="form-input" id="phone" type="phone" name="phone"
+                                                placeholder="Your Contact Number" required>
+                                            <br>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <textarea class="form-input" id="message" name="message" rows="4"
+                                                cols="20" required placeholder="Share Your Requirement" required></textarea>
+                                        </div>
+
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="http://softmoreit.com/seo">
+                                        <input type="hidden" name="_cc" value="pinjatimusaddique@yahoo.com">
+                                        <div style="float:left; ">
+
+                                            <button type="submit" onclick="Thank()"
+                                                style=" padding: 10px; border-radius: 15px;">
+                                                Send Message
+
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+
+    </div>
+</section>
+        
+<section>
+    <div style=" width: 100%; background-color: #0d0925;">
+        <div style=" height: fit-content; background-color: #0d0925;" class="container-xl">
+            <br><br><br><br>
+            <div class="container-fluid py-5 ">
+                <div style="padding: 0px 3% 0px 3%; border-radius: 15px;" class="row box2">
+                    <div class="row g-0">
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <br><br><br>
+                                <h5 style="font-size: 40px;" class="text-primary">What Is SEO?
+                                </h5>
+                                <br>
+                                <h5 style="font-size: 20px;" class="text-white">Search engine optimisation (SEO) is
+                                    a digital marketing method used to increase the quality and quantity of organic
+                                    search traffic to your website.</h5>
+                                <br>
+                                <h5 style="font-size: 20px;" class="text-white">SEO encompasses a range of
+                                    strategies used to achieve high rankings for your website in search engines. And
+                                    that’s important because 90% of your customers use the internet to find products
+                                    and services.</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <img src="./img/seoo.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+
+    </div>
+</section>
+        
+<section>
+    <div style="margin-bottom: 50px; width: 100%; background-color: #0d0925;">
+
+        <div style=" height: fit-content; background-color: #0d0925;" class="container-xl">
+            <br><br><br><br><br>
+            <div class="container-fluid ">
+
+
+                <div class="row">
+                    <div style="padding: 20px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front ">
+                                    <img src="./img/tech/seo.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom:35px;; margin-left: 75px;">
+                                    <br>
+                                    <h4 class="text-white text-center">Full Suite SEO</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">Full Suite SEO</h2>
+                                    <p>Our full suite professional Search Engine Optimization services are
+                                        everything you might need. From targeted keyword research, setting up
+                                        Google Analytics, metadata descriptions, SEO audits, link building and
+                                        the list gets longer.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 20px; border-radius: 15px; " class="col-md-4 text-white box1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./img/tech/seolocal.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom: 35px;;margin-left: 75px;">
+                                    <br>
+                                    <h4 class="text-white text-center">Local SEO Services</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">Local SEO Services</h2>
+                                    <p>When your business needs are confined to your local audience - Local SEO
+                                        Services works best. From Google My Business creation, optimization, to
+                                        conversion tracking and geo-tagging - we are the SEO marketing company
+                                        you must partner with.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 20px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./img/tech/seoanalytics.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom: 35px;;margin-left: 75px;">
+                                    <br>
+                                    <h4 class="text-white text-center">Google Analytics Configuration</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">Google Analytics Configuration</h2>
+                                    <p>Get better insights into what factors are working for you and what is
+                                        not. Keep an eye on complex tracking codes and employ tag managers - our
+                                        Analytics solutions have got you covered.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:35px ;" class="row">
+                    <div style="padding: 20px; border-radius: 15px;" class="col-md-4 text-white box1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./img/tech/seolink.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom: 35px;;margin-left: 75px;">
+                                    <br>
+                                    <h4 class="text-white text-center">Link Building</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">Link Building</h2>
+                                    <p>Explore our range of SEO-centric link building and content outreach
+                                        services to get all those good link juices flowing in and attract
+                                        footfalls to your website.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 20px; border-radius: 15px;" class="col-md-4 text-white box1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./img/tech/seocheck.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom: 35px;;margin-left: 85px;">
+                                    <br>
+                                    <h4 class="text-white text-center">SEO Audits</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">SEO Audits</h2>
+                                    <p>Don’t have a clue about your site’s degrading performance? Let Uplers-
+                                        the SEO service provider audit your site’s important aspects including
+                                        traffic sources, metadata, meta descriptions and keyword analysis.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 20px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./img/tech/seoecommerce.png" alt="Avatar"
+                                        style="width:135px;height:145px; padding-bottom: 35px;;margin-left: 75px;">
+                                    <br>
+                                    <h4 class="text-white text-center">Ecommerce SEO</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text-white">Ecommerce SEO</h2>
+                                    <p>Modern days call for modern solutions. These days owning a great looking
+                                        eCommerce store is not enough. You need people to find your store and
+                                        shop. eCommerce SEO is the answer.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+</section>
+        
+        <!-- <div style="margin-bottom: 90px; width: 100%; background-color: #0d0925;">
+
+            <div style=" height: fit-content; background-color: #0d0925;" class="container-xl">
+                <br><br><br><br><br>
+                <div class="container-fluid ">
+                    <div class="row">
+
+                        <div class="col justify-content-end ">
+                            <div class="row">
+                                <div style="padding: 25px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                                    <h4 class="text-primary">Full Suite SEO</h4>
+                                    <p>With a reputation for delivering organic success, we develop strategic SEO
+                                        campaigns
+                                        that
+                                        place our clients’ websites in the coveted top-three SERP positions.</p>
+                                    <br>
+                                    <a href="seo">
+                                        Discover SEO<i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                                <div style="padding: 25px; border-radius: 15px; "
+                                    class="col-md-4 text-white box2">
+                                    <h4 class="text-primary">Website Design</h4>
+                                    <p>With a reputation for delivering organic success, we develop strategic SEO
+                                        campaigns
+                                        that
+                                        place our clients’ websites in the coveted top-three SERP positions.</p>
+                                    <br>
+                                    <a href="web_application">
+                                        Website Design <i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                                <div style="padding: 25px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                                    <h4 class="text-primary">Full Suite SEO</h4>
+                                    <p>With a reputation for delivering organic success, we develop strategic SEO
+                                        campaigns
+                                        that
+                                        place our clients’ websites in the coveted top-three SERP positions.</p>
+                                    <br>
+                                    <a href="seo">
+                                        Discover SEO<i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                            </div>
+
+                            <div style="margin-top:65px ;" class="row">
+                                <div style="padding: 25px; border-radius: 15px;" class="col-md-4 text-white box1">
+                                    <h4 class="text-primary">PPC Management</h4>
+                                    <p>We understand the complex algorithms used by Google when advertising on their
+                                        platform
+                                        and can implement tailored strategies that generate leads and sales for your
+                                        business on
+                                        an ongoing basis.</p>
+                                    <br>
+                                    <a href="ppc">
+                                        PPC Management<i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                                <div style="padding: 25px; border-radius: 15px;" class="col-md-4 text-white box1">
+                                    <h4 class="text-primary">Social Media Marketing</h4>
+                                    <p>Digital Nomads HQ is a marketing agency with a proven track record. Our
+                                        strategies
+                                        work –
+                                        we’ve tried them ourselves! Expertise like ours is crucial in PPC advertising
+                                        where
+                                        every dollar counts. ​</p>
+                                    <br>
+                                    <a href="social_media_marketing">
+                                        Social Media Marketing<i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                                <div style="padding: 25px; border-radius: 15px; " class="col-md-4 text-white box1 ">
+                                    <h4 class="text-primary">Full Suite SEO</h4>
+                                    <p>With a reputation for delivering organic success, we develop strategic SEO
+                                        campaigns
+                                        that
+                                        place our clients’ websites in the coveted top-three SERP positions.</p>
+                                    <br>
+                                    <a href="seo">
+                                        Discover SEO<i class="fa fa-arrow-right text-primary pt-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+        </div> -->
+
+        <!-- what is seo end -->
+
+
+        <!-- <div class="container-fluid bg-primary py-5 ">
             <div style="padding-left: 6%;" class="row">
                 <div class="col-md-8">
                     <div class="card-body">
@@ -186,13 +604,13 @@
                     <img src="./img/seo1.png" class="img-fluid rounded-start" alt="...">
                 </div>
             </div>
-        </div>
+        </div> -->
         <br><br>
-        <div class="container-fluid py-5 ">
-            <div style="padding: 0px 3% 0px 3%; " class="row">
+        <div style="margin-bottom: 150px;" class="container-fluid py-5 ">
+            <div style="padding: 0px 3% 0px 3%;  " class="row">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="./img/seocontent.png" class="img-fluid rounded-start" alt="...">
+                        <img src="./img/seo1.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -202,7 +620,7 @@
                             <h5 style="font-size: 20px;" class="card-title">Softmore IT, an SEO company in Dehli,
                                 provides
                                 SEO management services that help you achieve high rankings.</h5>
-                            <p style="color:black; text-align:left;" class="card-text">Our search engine optimization
+                            <p style="color:white; text-align:left;" class="card-text">Our search engine optimization
                                 company helps increase your website’s organic traffic, brand discovery, and improve your
                                 search rankings. Strengthen your brand’s online presence with our professional SEO
                                 services.</p>
@@ -213,24 +631,24 @@
             </div>
         </div>
 
-        <div style="margin-top: -100px;" class="container-fluid py-5 ">
+        <div style="margin-bottom: 150px;" class="container-fluid py-5 ">
             <div style="padding: 0px 3% 0px 3%; " class="row">
-                <div  class="row g-0">
-                    <div style="background-color:whitesmoke;"  class="col-md-8">
+                <div class="row g-0">
+                    <div class="col-md-8">
                         <div class="card-body">
                             <br><br><br>
                             <h5 style="font-size: 40px; text-align:right;" class="card-title">On-Page SEO</h5>
-                            <p style="color:black; text-align:right;" class="card-text">On-page SEO is the foundation of
+                            <p style="color:white; text-align:right;" class="card-text">On-page SEO is the foundation of
                                 any good digital marketing plan. Your website copy needs to be optimised for both users
                                 and search engines in a certain way for it to be found and engaged with. This is one of
                                 the first things Softmore IT will tackle to get your website ranking.</p>
-                            <p style="color:black; text-align:right;" class="card-text">The SEO experts at Softmore IT
+                            <p style="color:white; text-align:right;" class="card-text">The SEO experts at Softmore IT
                                 will do keyword research on your products/services, optimise your titles and meta
                                 descriptions, write content, add internal/external links, and perform an SEO audit to
                                 see how your benchmarking.</p>
                         </div>
                     </div>
-                    <div style="background-color:whitesmoke;"  class="col-md-4">
+                    <div class="col-md-4">
                         <img src="./img/web7.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-4">
@@ -240,11 +658,11 @@
                         <div class="card-body">
                             <br><br><br>
                             <h5 style="font-size: 40px; text-align:left;" class="card-title">Off-Page SEO</h5>
-                            <p style="color:black; text-align:left;" class="card-text">Off-page SEO is more than just
+                            <p style="color:white; text-align:left;" class="card-text">Off-page SEO is more than just
                                 links back to your website. It also includes brand mentions, content marketing,
                                 citations, social media, reviews, and more! If you want your website to gain a
                                 competitive advantage in the Google search results, off-site SEO is the key.</p>
-                            <p style="color:black; text-align:left;" class="card-text">This SEO service includes
+                            <p style="color:white; text-align:left;" class="card-text">This SEO service includes
                                 analysing your competitors for easy backlinks, sourcing guest post opportunities,
                                 finding unlinked mentions, paying for advertorial articles, and finding broken links
                                 among many other strategies SEO agencies like Softmore IT are well versed in.</p>
@@ -255,25 +673,25 @@
                 </div>
             </div>
         </div>
-        
-        <div style="margin-top: -100px;" class="container-fluid py-5 ">
+
+        <div style="margin-bottom: 100px;" class="container-fluid py-5 ">
             <div style="padding: 0px 3% 0px 3%; " class="row">
                 <div class="row g-0">
-                    <div style="background-color:whitesmoke;"  class="col-md-8">
+                    <div class="col-md-8">
                         <div class="card-body">
                             <br><br><br>
                             <h5 style="font-size: 40px; text-align:right;" class="card-title">Technical SEO</h5>
-                            <p style="color:black; text-align:right;" class="card-text">One thing that many other SEO
+                            <p style="color:white; text-align:right;" class="card-text">One thing that many other SEO
                                 consultants in Melbourne struggle with is technical SEO. This is because they usually
                                 don’t have website developers on their team to handle the work. This then leads to
                                 outsourcing and poor quality results.</p>
-                            <p style="color:black; text-align:right;" class="card-text">Softmore IT has a very
+                            <p style="color:white; text-align:right;" class="card-text">Softmore IT has a very
                                 experienced web development department that boasts decades of experience in technical
                                 SEO. Some tasks could include improving your website speed, adding schema markup to
                                 specific pages, fixing coverage/coding issues, and adding redirects.</p>
                         </div>
                     </div>
-                    <div style="background-color:whitesmoke;"  class="col-md-4">
+                    <div class="col-md-4">
                         <img src="./img/technicalseo.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-3">
@@ -283,12 +701,12 @@
                         <div class="card-body">
                             <br><br><br>
                             <h5 style="font-size: 40px; text-align:left;" class="card-title">Local SEO</h5>
-                            <p style="color:black; text-align:left;" class="card-text">If your business has a physical
+                            <p style="color:white; text-align:left;" class="card-text">If your business has a physical
                                 location or services specific geographic areas, you can benefit greatly from this.
                                 Nearly 46% of all Google searches are for local products/services. This means if your
                                 business isn’t locally optimised by a professional, you could be missing out on those
                                 leads.</p>
-                            <p style="color:black; text-align:left;" class="card-text">Softmore IT usually recommends
+                            <p style="color:white; text-align:left;" class="card-text">Softmore IT usually recommends
                                 the following local SEO strategy to get the best results. This includes Google My
                                 Business profile optimisation, citation accuracy and consistency checks, and updating
                                 content tailored to your location/service areas.</p>
@@ -326,7 +744,11 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="https://unpkg.com/htmlincludejs"></script>
-
+        <script>
+            function Thank() {
+                alert("Thanks! For Contacting Us!");
+            }
+        </script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
